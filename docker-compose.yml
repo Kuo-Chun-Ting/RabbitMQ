@@ -1,0 +1,12 @@
+version: '2'
+
+services:
+   rabbitmq:
+     #image: lillard/myrabbitmq
+     build: .
+     image: myrabbitmq:1
+     ports:
+      - "15672:15672"
+      - "32767:1883"
+      - "5672:5672"
+
